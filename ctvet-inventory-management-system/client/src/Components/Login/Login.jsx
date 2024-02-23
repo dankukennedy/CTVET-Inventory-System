@@ -35,7 +35,7 @@ const Login = () => {
             </form>
           </div>
           <div className="footerDiv flex">
-            <span className="text">Don't have an account? </span>
+            <span className="text">Don&apos;t have an account? </span>
             <Link to={"/register"}>
               <button className="btn">Sign Up</button>
             </Link>
