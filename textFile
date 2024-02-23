@@ -1,0 +1,8 @@
+So guys  we have two folders
+
+client  and  server
+
+client  - will hold our fronted
+server - will hold our  Express Server
+
+lets create the component now !
