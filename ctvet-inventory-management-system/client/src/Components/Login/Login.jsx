@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import { FaUserShield } from "react-icons/fa";
 
 //importing our assets
-import video from "../../LoginAssets/video.mp4";
-import logo from "../../LoginAssets/logo.jpg";
+import video from "./Assets/video.mp4";
+import logo from "./Assets/logo.jpg";
 
 const Login = () => {
   return (
