@@ -14,11 +14,11 @@
      --hoverColor: hsl(93, 75%, 76%);
      --paleGreen: hsl(96, 75%, 89%);
      --whiteColor: hsl(0, 0%, 100%);
-     --blackColor: hsl(0, 0%, 75%);
+     --blackColor: hsl(0, 12%, 5%);
      --greyText: hsl(0, 0%, 85%);
      --bgColor: hsl(113, 11%, 85%);
      --inputColor: hsl(330,12%, 97%);
-     --inputColor: hsl(54, 14%, 90%);
+  
 
 /* Font ang Typography */
     --biggestFontSize: 2.5rem;
@@ -67,7 +67,22 @@ img, video{
     display: none; //we shall show all this come to use, be patient guyd 
 }
 
-
+.showMessageUser{
+    display: block; 
+    color: var(--whiteColor);
+    padding: 10px;
+    background: rgb(4, 124, 94);
+    border-radius: 3px;
+    text-align: center
+}
+.showMessage{
+   display: block; 
+   color: var(--whiteColor);
+   padding: 10px;
+   background: rgb(255,0,0);
+   border-radius: 3px;
+   text-align: center;   
+}
 
 .showMessage{
     display: block;
@@ -95,9 +110,9 @@ img, video{
 }
 
 // pages sltlings 
-.logPage{
+.loginPage, .registerPage{
     height: 100vh;
-    width: 100vh;
+    width: 100%;
     margin: auto;
     border-radius: 10px;
     overflow: hidden;
@@ -110,5 +125,182 @@ img, video{
         justify-content: space-between;
         border-radius: 10px;
         background: hsl(0, 0%, 91%);
+
+        .videoDiv{
+            position: relative;
+            display: flex;
+            flex-basis: 50%;
+            width: 70%;
+            height: 100%;
+            padding: 0 1.5rem;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: auto;
+            border-radius: 10px;
+            overflow: hidden;
+            
+            video, .footerDiv{
+                position: absolute;
+            }
+            
+            video{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                top: 0;
+                bottom:0;
+                right: 0;
+                left: 0;
+            }
+
+            .textDiv{
+                position: relative;
+
+                .title{
+                    color: var(--whiteColor);
+                    font-size: 35px;
+                    font-weight:800 ;
+                }
+
+                p{
+                  color: var(--whiteColor);
+                  padding: 1rem; 
+                  font-weight: 400;
+                }
+            }
+
+            .footerDiv{
+                bottom: 10px;
+                padding: 0 1rem;
+                height: 60px;
+                background:rgb(255,255, 255, 0.248) ;
+                left: 10px;
+                right: 10px;
+                justify-content: space-between;
+                backdrop-filter: blur(1px);
+                border-radius: 10px;
+
+                 .text{
+                    color: var(--whiteColor);
+                 }
+
+                 .btn{
+                    background: var(--whiteColor);
+                    color: var(--primaryColor);
+                    padding: .8rem 1.5rem;
+                    border-radius: 10px;
+                    font-weight: 400;
+                    transition: 0.3s ease ;
+
+                    &:hover{
+                        background: var(--hoverColor);
+                        color: var(--blackColor);
+                    }
+                 }
+            }
+        }
+
+        .formDiv{
+          flex-basis:50%;
+          margin: auto;
+          flex-direction: column;
+          gap: 1.5rem;
+          transform: translateY(-1rem);
+
+          .headerDiv{
+            text-align:center;
+            padding: 1.5rem 0;
+
+            img{
+                width: 150px;
+                padding-bottom: .5rem ;
+              
+                
+            }
+
+            h3{
+                font-size:25px;
+                color: var(--blackColor);  
+                font-weight: 600; 
+
+             }
+          } 
+           .form{
+             gap: 1rem;
+
+             .inputDiv{
+                .con{
+                    color: var(--greyText); 
+                }
+
+                input{
+                    background: none;
+                    outline: none;
+                    border: none;
+                    width: 200px;
+                }
+
+                label{
+                    color: var(--blackColor);
+                    font-weight: 400;
+                    font-size: 14px;
+                    padding: .5rem;
+                    display: block;
+                }
+            
+                .input{
+                    gap: .5rem;
+                    padding: 1rem;
+                    background: var(--inputColor);
+                    border-radius: 10px;
+                  }
+
+              }
+
+              .btn{
+                  padding: .8rem;
+                  background: var(--primaryColor);
+                  border-radius: 10px;
+                  color: var(--whiteColor);
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 16px; 
+                  width: 100%;
+                  gap: .5rem;
+                  transition: .3s ease;
+
+                  .icon{
+                     font-size: 25px;
+                     transition:  .3s ease;                     
+                  }
+
+                 &:hover{
+                    background: var(--hoverColor);
+                    color: var(--blackColor);
+
+                    .icon{
+                        color: var(--blackColor);  
+                        transform: translateX(5px);                 
+                     }
+                 }
+
+              }
+               .forgotPassword{
+                 font-size: 13px;
+                 color: var(--blackColor);
+                 opacity: 0.7;
+                 text-align: center;
+                 
+                 a{
+                    text-decoration: underline ;
+                    cursor: pointer;
+                    opacity: 1;
+                 }
+               }
+           }
+
+        }
     }
+
 }
