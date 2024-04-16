@@ -21,6 +21,7 @@
      --greyText: hsl(0, 0%, 85%);
      --bgColor: hsl(113, 11%, 85%);
      --inputColor: hsl(330,12%, 97%);
+     --successColor: hsl(240, 73%, 85%);
   
 
 /* Font ang Typography */
@@ -120,10 +121,10 @@ img, video{
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 7px 50px rgb(214, 233, 213);
-    background: var(--primaryColor);
+    background: var(--successColor);
 
     .container{
-        height: 75vh;
+        height: 80vh;
         width: 60%;
         margin: auto;
         justify-content: space-between;
