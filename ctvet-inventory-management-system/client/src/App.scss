@@ -6,7 +6,10 @@
      margin: 0;
      box-sizing: border-box;
      font-family: 'Montserrat', sans-serif;
+  
 } 
+ 
+
 
 //Let set up our default styling
 :root{
@@ -109,7 +112,7 @@ img, video{
     background: var(--paleGreen);
 }
 
-// pages sltlings 
+// pages stylings 
 .loginPage, .registerPage{
     height: 100vh;
     width: 100%;
@@ -117,6 +120,7 @@ img, video{
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 7px 50px rgb(214, 233, 213);
+    background: var(--primaryColor);
 
     .container{
         height: 75vh;
